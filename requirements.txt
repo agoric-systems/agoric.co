@@ -1,0 +1,5 @@
+Flask==0.12.2
+Flask-SQLAlchemy==2.3.0
+flask-talisman==0.4.0
+steem==0.18.9
+funcy==1.8.0

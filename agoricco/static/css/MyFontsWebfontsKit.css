@@ -1,0 +1,34 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3440769, 2017-08-22T14:16:12-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FF Mark Web Pro Light by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/mark/pro-light/
+ * 
+ * Webfont: FF Mark Web Pro Medium by FontFont
+ * URL: https://www.myfonts.com/fonts/fontfont/mark/pro-medium/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3440769
+ * Licensed pageviews: 50,000
+ * Webfonts copyright: 2013 published by FontShop International GmbH
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/348081");
+
+  
+@font-face {font-family: 'FFMarkWebProLight';src: url('../webfonts/348081_0_0.eot');src: url('../webfonts/348081_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/348081_0_0.woff2') format('woff2'),url('../webfonts/348081_0_0.woff') format('woff'),url('../webfonts/348081_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'FFMarkWebProMedium';src: url('../webfonts/348081_1_0.eot');src: url('../webfonts/348081_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/348081_1_0.woff2') format('woff2'),url('../webfonts/348081_1_0.woff') format('woff'),url('../webfonts/348081_1_0.ttf') format('truetype');}
+ 

@@ -1,0 +1,287 @@
+{% extends "layout.html" %}
+{% block head %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108929760-1"></script>
+  <script src="{{ url_for('static', filename='js/tracking.js') }}"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Agoric Systems</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel='shortcut icon' type='image/x-icon' href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <!--
+  /**
+   * @license
+   * MyFonts Webfont Build ID 3440769, 2017-08-22T14:16:12-0400
+   * 
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are 
+   * explicitly restricted from using the Licensed Webfonts(s).
+   * 
+   * You may obtain a valid license at the URLs below.
+   * 
+   * Webfont: FF Mark Web Pro Light by FontFont
+   * URL: https://www.myfonts.com/fonts/fontfont/mark/pro-light/
+   * 
+   * Webfont: FF Mark Web Pro Medium by FontFont
+   * URL: https://www.myfonts.com/fonts/fontfont/mark/pro-medium/
+   * 
+   * 
+   * License: https://www.myfonts.com/viewlicense?type=web&buildid=3440769
+   * Licensed pageviews: 50,000
+   * Webfonts copyright: 2013 published by FontShop International GmbH
+   * 
+   * © 2017 MyFonts Inc
+  */
+
+  -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/MyFontsWebfontsKit.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/agoric.css') }}">
+  {% if request.MOBILE %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+  {% endif %}
+{% endblock %}
+
+{% block body %}
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!--<iframe class="video" src="https://player.vimeo.com/video/234619331?background=1&badge=0&autopause=0&player_id=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+
+
+  <div class="container full-screen">
+      <div id="upper-nav">
+        <a href="/" class="logo">
+          <img src="{{ url_for('static', filename='img/AGORIC_LOGO.png') }}" alt="Agoric Systems">
+        </a>
+        <span id="social-icons">
+              <a class="social" target="_blank" href="https://steemit.com/@agoric.systems">
+                <img src="{{ url_for('static', filename='img/steem_logo_white.png') }}" />
+              </a>
+            </span>
+            <div id="mailing-list">
+              Join mailing list:
+              <div class="newsletter-signup">
+                <form action="https://systems.us16.list-manage.com/subscribe/post?u=6b8cca047001fabfe85b1db25&id=5fa7de59b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div class="anti-spam-input" aria-hidden="true"><input type="text" name="b_6b8cca047001fabfe85b1db25_5fa7de59b2" tabindex="-1" value=""></div>
+                  <input type="email" name="EMAIL" value="" placeholder="Email address">
+                  <input value="Subscribe" name="subscribe" type="submit">
+                </form>
+              </div>
+            </div>
+      </div>
+      <div class="cover full-screen-bg">
+        <video loop muted autoplay class="video">
+          <source src="https://de5eddxb9zi2d.cloudfront.net/AGORIC_BG.webm" type="video/webm">
+          <source src="https://de5eddxb9zi2d.cloudfront.net/AGORIC_BG.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div id="lower-nav" class="nav">
+        <a data-target="about">
+            About
+        </a>
+        <a data-target="witness-proposal">
+            Witness Proposal
+        </a>
+        <a data-target="faucet">
+            Redeem Code
+        </a>
+      </div>
+      <section id="contact" class="drawer three-o">
+        <div class="page-container">
+          <div class="page">
+            <p>
+              email: <a href="mailto:info@agoric.systems">info@agoricsystems.com</a>
+            </p>
+            <p>
+              <a href="https://steemit.com/@agoric.systems">steemit.com/@agoric.systems</a>
+            </p>
+            <p>
+              join our mailing list
+              <div class="newsletter-signup">
+                <input type="email" placeholder="Email address"><input type="submit">
+              </div>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="drawer three-o">
+        <div class="page-container">
+          <div class="page">
+            <h1>The Agoric Vision</h1>
+            <p>We Agorians see value transmission as a fundamental human right. In the form of money, it is simply the act of transferring a form of potential energy from one entity to the next; be it an institution, person, or autonomous system. Although this is not technically potential energy by scientific terms, money is akin to potential energy in that its influence is able to open the doors and opportunities of the world up to those who have it. Modern society is normalized into believing in the myth of money without ever questioning “Why is it this way?” or “Where does it come from?” The truth of the matter is that existing fiat money systems are quite arbitrary. They are currently useful because of their widespread adoption, yet flawed in more ways than one. We the people can’t openly verify that our society is functioning correct and fairly. Nor are we able to escape the captured networks of arbitrary fees, delays, seizures, and fines.</p>
+
+            <p><strong>But there is a better way.</strong> Humanity finally has the tools to create faster and fairer monetary systems, exchanges, governance structures, voting systems, and settlement layers. Decentralized Autonomous Communities are springing into existence, stigmergic swarms of people expressing value to each other, collaborating, and socializing, and in general interacting in many different forms. Now, today, communities are creating brand new business models and unlocking agoric opportunities for people to earn their keep in this world. People are opting out of the traditional economy and joining a new one— the digital economy.</p>
+
+            <p>At Agoric, we believe in solving the challenges of humanity, by adopting socio-economic systems that align with our values, and sharing those systems and values with the wider world. We have personally derived great benefit from participating in the nascent digital economy already; dividends of knowledge, collaboration, relationships, tokens— all units of intrinsic value that we’ve shared and had shared with us.</p>
+
+            <p>We hope you will join us in in our endeavor to reconfigure society into an accessible and equitable, prosperous and beautiful landscape for all of the people on Earth.</p>
+          </div>
+        </div>
+        <div class="gradient gradient-top"></div>
+        <div class="gradient gradient-bottom"></div>  
+      </section>
+      <section id="witness-proposal" class="drawer three-o">
+        <div class="page-container">
+          <div class="page">
+            <h1>Witness Proposal</h1>
+            <p>Collectively, our crew has already introduced Steem, Graphene, and blockchain technology to hundreds of people, and we’re just getting started! We aspire to become an active witness in cooperation with the Steem community, and in support of our core goals:</p>
+            <ol>
+              <li>To provide reliable infrastructure for Steem and other Graphene-based blockchain networks; e.g. helping to further develop and expand the witness toolset for maintaining operational infrastructure, providing price feeds, and acting as an oracle.</li>
+              <li>To build our team’s collective influence on the network and leverage that influence for greater works, such as bringing more people to the platform, and in support of our other core goals.</li>
+              <li>To create products and services that will support Steem and the overall Graphene ecosystem by maintaining a responsive product development pipeline.</li>
+              <li>To run educational workshops in our local communities that will onboard more users to Steem, and help to amplify its existing network effect.</li>
+              <li>To translate earned digital value into physical works as a testament to the power of distributed autonomous communities. We have ambitious goals, such as creating the first Steem-powered neighborhood in Detroit.</li>
+              <li>To create inspiring and engaging media, further expanding the many communities of which the Graphene ecosystem is comprised.</li>
+            </ol>
+            <hr>
+            <h2>Witness Server Specs</h2>
+            <p>We have two witness nodes running in different availability regions to reduce the time to failover. We also have installed monitoring on all of our core nodes.</p>
+            <strong>Witness nodes</strong>
+            <ul>
+              <li>Dual core 2.3 GHz Intel Xeon® E5-2686 v4 (Broadwell) processors</li>
+              <li>8 GB RAM</li>
+              <li>60 GB SSD</li>
+              <li>450 Mbit/s unmetered bandwidth</li>
+            </ul>
+            <strong>Seed node</strong>
+            <ul>
+              <li>steem.agoric.systems:2001</li>
+              <li>4 Dedicated x86 64 bit Cores</li>
+              <li>8 GB RAM</li>
+              <li>50 GB SSD</li>
+              <li>300 Mbit/s unmetered bandwidth</li>
+            </ul>
+            <hr>
+            <h2>The Agorians (Who are we?)</h2>
+            <div class="team-profile">
+              <img src="{{ url_for('static', filename='img/team/robrigo.png') }}" alt="">
+              <p><a href="https://steemit.com/@robrigo">@robrigo</a> is an adventurer and computerer. Closely following the Bitshares community since 2014, he has seen the light, and aspires to bring the crypto opportunity to everybody. In his free time, he likes to ride bikes and go hiking in remote wildernesses.</p>
+            </div>
+            <div class="team-profile">
+              <img src="{{ url_for('static', filename='img/team/matt-a.png') }}" alt="">
+              <p><a href="https://steemit.com/@matt-a">@matt-a</a> has been involved in the cryptocurrency space since Bitcoin’s inception and has decided to devote his life to Agoric Systems to ensure that as many human beings as possible can be educated on and liberated by cryptocurrency.</p>
+            </div>
+            <div class="team-profile">
+              <img src="{{ url_for('static', filename='img/team/lovejoy.png') }}" alt="">
+              <p><a href="https://steemit.com/@lovejoy">@lovejoy</a> is an explorer between the realms of blockchain technology and physical community. He is a multimedia professional with a diverse background spanning film production, visual arts, storytelling, sailing, and herbalism. His goal is the telling of stories which inspire, empower, and connect people throughout the world.</p>
+            </div>
+            <div class="team-profile">
+              <img src="{{ url_for('static', filename='img/team/sensei.png') }}" alt="">
+              <p><a href="https://steemit.com/@sensei">@sensei</a> is a digital nomad with a passion for discovery (both online and off). A generalist by nature, he specializes in helping businesses grow on the web via research, design, and development. You’ll find his heart resting at the intersection of art and technology.</p>
+            </div>
+            <div class="team-profile">
+              <img src="{{ url_for('static', filename='img/team/timothy-archer.png') }}" alt="">
+              <p><a href="https://steemit.com/@timothy-archer">@timothy-archer</a> is a curious autodidact with an Internet connection and a propensity for all things aesthetic. He is Ingrained with a realistic but ultimately an optimistic outlook on the future and our ability to manifest change.</p>
+            </div>
+            <div class="team-profile">
+              <img src="{{ url_for('static', filename='img/team/spurious-claims.png') }}" alt="">
+              <p><a href="https://steemit.com/@spurious-claims">@spurious-claims</a> is an impact-driven community and economic developer who is determined to ensure access to and meaningful engagement on the Internet. Education, outreach, and hustling are the name of her game.</p>
+            </div>
+            <hr>
+            <p>Thank you for reading! Agoric Systems is committed for the long haul. We are battle tested, innovative, and adaptable! We hope that you will support our campaign for witness on this and other Graphene chains as we continue to work for the benefit of everyone in our growing community.</p>
+            <p>You can vote for our witness here by scrolling down to the bottom and entering the name "agoric.systems" in the VOTE field. Click here for a gif that walks through the process!</p>
+            <p>We’d love to hear from you in the comments below!</p>
+            <p>Onward!</br>
+            The Agoric Team</p>
+          </div>
+        </div>
+        <div class="gradient gradient-top"></div>
+        <div class="gradient gradient-bottom"></div>  
+      </section>
+      <section id="faucet" class="drawer three-o bottom-right">
+        <div class="page-container">
+          <div id="faucet-form" class="page">
+            <h1>Redeem your Agoric scrip below</h1>
+            <strong>Enter the code found on your Agoric scrip to automatically register a <a href="https://steem.io/" target="_blank">Steem</a> account below.</strong>
+            <p>Steem is a global network that rewards content creation. Participants earn STEEM, a digital currency, that can appreciate in value as the network grows.</p>
+            <form id="redemption-form" action="/faucet" method="POST">
+              <input type="text" class="text-input" name="account_name" placeholder="Desired Steem account name">
+              <input type="text" class="text-input" name="code" placeholder="Invite code">
+              <input type="text" class="text-input" name="referrer_account" placeholder="Referrer Steem account">
+              <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+              <input type="submit" name="register" value="Register">
+            </form>
+            <div class='flash'>
+              <div class="message"></div>
+            </div>
+          </div>
+          <div id="account-registered" class="page">
+            <h1>Welcome to the Steem community, <span class="account_name"></span></h1>
+            <p>Before you go, please follow the security measures suggested below, they will help you keep any digital funds you receive safe. We do not store any information associated with your account, so be sure to copy your credentials below.</p>
+            <p><strong><u>Step 1.</u> Store the master passphrase provided below in a safe place. This can be used to authorize the transfer of digital funds. We recommend using a password manager such as <a href="https://www.lastpass.com/" target="_blank">LastPass</a>. The master password should not be used to log into your Steem account for day-to-day use. You can change it by logging into steemit.com and filling out the <a href="https://steemit.com/@{{ account_name }}/password" target="_blank" >password reset form</a>.</strong></p>
+            <div class="account-info">
+              <h2>Account Name: <span class="account_name"></span></h2>
+            </div>
+            <div class="account-info">
+              <h2>Master passphrase: </h2>
+              <input id="password" type="password" readonly value="">
+              <input type="submit" value="Reveal" class="revealer">
+              <input id="password-clipboard" type="submit" value="Copy" class="copy">
+            </div>
+            <p><strong><u>Step 2.</u> Store your private posting key. Use your private posting key to log onto Steem-powered services for day-to-day use. It does not give the ability to authorize financial transactions.</strong></p>
+            <div class="account-info">
+              <h2>Private posting key: </h2>
+              <input id="private_posting_key" readonly type="password" value="">
+              <input type="submit" value="Reveal" class="revealer">
+              <input id="private-posting-key-clipboard" type="submit" value="Copy" class="copy">
+            </div>
+            <p><strong><u>Step 3.</u> Use your account name and password to access services that use the Steem network.</strong></p>
+            <div id="services">
+              <a href="https://steemit.com" target="_blank">
+                <img src="{{ url_for('static', filename='img/steem_logo_white.png') }}">
+              </a>
+              <a href="https://busy.org" target="_blank">
+                <img src="{{ url_for('static', filename='img/busy_logo.svg') }}">
+              </a>
+              <a href="https://dsound.audio" target="_blank">
+                <img src="{{ url_for('static', filename='img/dsound-logo.png') }}">
+              </a>
+              <a href="https://dtube.video" target="_blank">
+                <img src="{{ url_for('static', filename='img/dtube_logo.png') }}">
+              </a>
+              <a href="https://chainbb.com" target="_blank">
+                <img src="{{ url_for('static', filename='img/chainbb.png') }}">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="gradient gradient-top"></div>
+        <div class="gradient gradient-bottom"></div>  
+      </section>
+      <nav class="nav">
+         <ul class="menu-items">
+          <li class="bottom-left about"><a data-target="about">
+            About
+          </a></li>
+          <li class="bottom-middle witness-proposal"><a data-target="witness-proposal">
+            Witness Proposal
+          </a></li>
+          <li class="bottom-right faucet"><a data-target="faucet">
+            Redeem Code
+          </a></li>
+          <li class="collapse-button">
+            <button>Menu</button>
+          </li>
+        </ul>
+      </nav>
+  </div>
+  {% block scripts %}
+    <script src="{{ url_for('static', filename='js/vendor/navigo.min.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script src="//cdn.steemjs.com/lib/latest/steem.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    {% if request.MOBILE %}
+      <script src="{{ url_for('static', filename='js/mobile.js') }}"></script>
+    {% endif %}
+  {% endblock %}
+{% endblock %}

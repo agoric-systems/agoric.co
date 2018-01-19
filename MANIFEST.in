@@ -1,0 +1,7 @@
+graft agoricco/templates
+graft agoricco/static
+graft agoricco/lib
+include agoricco/views.py
+include agoricco/models.py
+include agoricco/default_settings.py
+

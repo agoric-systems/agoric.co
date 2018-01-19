@@ -1,0 +1,115 @@
+.three {
+    float: none;
+    width: 100%;
+}
+.three-o {
+    float: none;
+    width: 100%;
+    left: 0;
+    top: 11.5vh;
+    height: 70vh;
+}
+.bottom-middle.three-o {
+    left: 0;
+    margin-left: 0;
+    bottom: 10vh;
+}
+.logo img {
+    padding: 0.5rem;
+    width: 14rem;
+    height: 100%;
+}
+.social img {
+    height: 100%;
+    width: 6rem;
+}
+#mailing-list {
+    padding-right: 1rem;
+    font-size: 1rem;
+    text-align: left;
+}
+nav {
+    display:block;
+    position: fixed;
+    width: 100%; 
+    bottom: 0;
+}
+.menu-items {
+    width: 100%;
+    padding-left: 0;
+}
+.menu-items > li {
+    float: none;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:0;
+    text-align: center;
+    border-top: 1px solid #fff;
+    transform: translateY(530px);
+    transition: 160ms ease-in-out;
+}
+.menu-items > li > a {
+    display: inline-block;
+    width: 100%;
+}
+.menu-items.active > li {
+    transform: translateY(0);
+}
+.menu-items li.collapse-button {
+    display: block;
+    transform: translateY(0);
+}
+.menu-items li.content {
+    overflow-y: scroll;
+    padding: 0 2rem;
+    text-align: left;
+}
+.float-center-stats {
+    position: fixed;
+    top: auto;
+    bottom: 60px;
+}
+#upper-nav {
+    padding: 0rem;
+    height: 11.5vh;
+}
+#lower-nav {
+    display: none;
+}
+.newsletter-signup {
+    margin-left: 0px;
+}
+.newsletter-signup input[type="email"] {
+    width: 10rem;
+}
+#social-icons {
+    margin-right: 0px;
+}
+input {
+    height: 4vh;
+}
+#redemption-form > input {
+    height: 3rem;
+}
+.account-info {
+    text-align: center;
+}
+
+.account-info > input {
+    height: 3rem;
+    width: 7rem;
+}
+
+#services {
+    flex-direction: column;
+    text-align: center;
+}
+
+#services > a > img {
+    margin: 2rem 0;
+    height: 8vh;
+    max-width: none;
+}
