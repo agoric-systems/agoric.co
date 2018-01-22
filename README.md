@@ -1,5 +1,44 @@
 # Running the web app locally for development
 
+## On Ubuntu
+
+1) Download virtualenv and create a new virtualenv.
+
+`sudo apt-get install virtualenv`
+
+2) Clone the project's git repo somewhere.
+
+`git clone git@github.com:agoric-systems/agoric.co.git`
+
+3) Next, change into the project's directory.
+
+`cd agoricco`
+
+4) Now the virtualenv can be created.
+
+`virtualenv -p python3.6 agoricco`
+`source agoricco/bin/activate`
+
+5) Your prompt should say (agoricco) now.
+
+
+6) Install the python dependencies.
+
+`pip install -r requirements.txt`
+
+7) Change directory again into the `agoricco` package folder and start the flask app.
+
+`cd agoricco`
+`export FLASK_APP=wsgi.py`
+`flask run`
+
+8) If you need to activate the virtualenv in the future:
+
+`workon agoricco`
+
+
+## On macOS
+
 1) Download virtualenv / virtualenvwrapper.sh and create a new virtualenv. Using homebrew, this can be done with the following commands:
 
 `brew install virtualenvwrapper.sh`

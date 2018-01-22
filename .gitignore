@@ -33,3 +33,9 @@ __pycache__
 *.retry
 .DS_Store
 dist
+
+# env
+agoricco/bin/
+agoricco/include/
+agoricco/lib/python3.6/
+agoricco/share/
