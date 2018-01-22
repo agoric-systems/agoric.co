@@ -7,21 +7,20 @@
 
 > sudo apt-get install virtualenv
 
-2) Clone the project's git repo somewhere.
-
-> git clone git@github.com:agoric-systems/agoric.co.git
-
-3) Next, change into the project's directory.
-
-> cd agoricco
-
-4) Now the virtualenv can be created.
+2) Now the virtualenv can be created.
 
 > virtualenv -p python3.6 agoricco
 > source agoricco/bin/activate
 
-5) Your prompt should say (agoricco) now.
+3) Your prompt should say (agoricco) now.
 
+4) Clone the project's git repo somewhere.
+
+> git clone git@github.com:agoric-systems/agoric.co.git
+
+5) Next, change into the project's directory.
+
+> cd agoric.co
 
 6) Install the python dependencies.
 
