@@ -15,5 +15,6 @@ setup(
         'flask-seasurf',
         'mysqlclient',
         'Flask-Mobility',
+        'Flask_Babel',
     ],
 )

@@ -67,7 +67,7 @@
               </a>
             </span>
             <div id="mailing-list">
-              Join mailing list:
+              {{ _('Join mailing list:') }}
               <div class="newsletter-signup">
                 <form action="https://systems.us16.list-manage.com/subscribe/post?u=6b8cca047001fabfe85b1db25&id=5fa7de59b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div class="anti-spam-input" aria-hidden="true"><input type="text" name="b_6b8cca047001fabfe85b1db25_5fa7de59b2" tabindex="-1" value=""></div>
@@ -85,13 +85,13 @@
       </div>
       <div id="lower-nav" class="nav">
         <a data-target="about">
-            About
+            {{ _('About') }}
         </a>
         <a data-target="witness-proposal">
-            Witness Proposal
+            {{ _('Witness Proposal') }}
         </a>
         <a data-target="faucet">
-            Redeem Code
+            {{ _('Redeem Code') }}
         </a>
       </div>
       <section id="contact" class="drawer three-o">
@@ -104,7 +104,7 @@
               <a href="https://steemit.com/@agoric.systems">steemit.com/@agoric.systems</a>
             </p>
             <p>
-              join our mailing list
+              {{ _('join our mailing list') }}
               <div class="newsletter-signup">
                 <input type="email" placeholder="Email address"><input type="submit">
               </div>
@@ -199,15 +199,15 @@
       <section id="faucet" class="drawer three-o bottom-right">
         <div class="page-container">
           <div id="faucet-form" class="page">
-            <h1>Redeem your Agoric scrip below</h1>
+            <h1>{{ _('Redeem your Agoric scrip below') }}</h1>
             <strong>Enter the code found on your Agoric scrip to automatically register a <a href="https://steem.io/" target="_blank">Steem</a> account below.</strong>
             <p>Steem is a global network that rewards content creation. Participants earn STEEM, a digital currency, that can appreciate in value as the network grows.</p>
             <form id="redemption-form" action="/faucet" method="POST">
-              <input type="text" class="text-input" name="account_name" placeholder="Desired Steem account name">
-              <input type="text" class="text-input" name="code" placeholder="Invite code">
-              <input type="text" class="text-input" name="referrer_account" placeholder="Referrer Steem account">
+              <input type="text" class="text-input" name="account_name" placeholder="{{ _('Desired Steem account name') }}">
+              <input type="text" class="text-input" name="code" placeholder="{{ _('Invite code') }}">
+              <input type="text" class="text-input" name="referrer_account" placeholder="{{ _('Referrer Steem account') }}">
               <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
-              <input type="submit" name="register" value="Register">
+              <input type="submit" name="register" value="{{ _('Register') }}">
             </form>
             <div class='flash'>
               <div class="message"></div>
@@ -259,13 +259,13 @@
       <nav class="nav">
          <ul class="menu-items">
           <li class="bottom-left about"><a data-target="about">
-            About
+            {{ _('About') }}
           </a></li>
           <li class="bottom-middle witness-proposal"><a data-target="witness-proposal">
-            Witness Proposal
+            {{ _('Witness Proposal') }}
           </a></li>
           <li class="bottom-right faucet"><a data-target="faucet">
-            Redeem Code
+            {{ _('Redeem Code') }}
           </a></li>
           <li class="collapse-button">
             <button>Menu</button>

@@ -1,0 +1,110 @@
+# English translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-01-25 22:49-0500\n"
+"PO-Revision-Date: 2018-01-25 21:29-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: views.py:35
+msgid "unknown"
+msgstr "unknown"
+
+#: views.py:43
+msgid "Please provide a desired account name."
+msgstr "Please provide a desired account name."
+
+#: views.py:47
+msgid "Test code used successfully."
+msgstr "Test code used successfully."
+
+#: views.py:61
+msgid "Account created successfully!"
+msgstr "Account created successfully!"
+
+#: views.py:63
+msgid ""
+"The invite code could not be validated. Please check your code and try "
+"again."
+msgstr ""
+"The invite code could not be validated. Please check your code and try "
+"again."
+
+#: views.py:65
+msgid "The desired account name is already taken. Please choose another."
+msgstr "The desired account name is already taken. Please choose another."
+
+#: views.py:68
+msgid ""
+"The desired account name is invalid. The name must have 3-16 alphanumeric"
+" characters and can not start with a number or include symbols other than"
+" periods, underscores, and hyphens."
+msgstr ""
+"The desired account name is invalid. The name must have 3-16 alphanumeric"
+" characters and can not start with a number or include symbols other than"
+" periods, underscores, and hyphens."
+
+#: views.py:70
+msgid ""
+"The account registration faucet has temporarily run out of funds. Please "
+"check back again later."
+msgstr ""
+"The account registration faucet has temporarily run out of funds. Please "
+"check back again later."
+
+#: views.py:72
+msgid "There was an issue contacting the Steem network. Please try again."
+msgstr "There was an issue contacting the Steem network. Please try again."
+
+#: templates/index.html:70
+msgid "Join mailing list:"
+msgstr "Join mailing list:"
+
+#: templates/index.html:88 templates/index.html:262
+msgid "About"
+msgstr "About"
+
+#: templates/index.html:91 templates/index.html:265
+msgid "Witness Proposal"
+msgstr "Witness Proposal"
+
+#: templates/index.html:94 templates/index.html:268
+msgid "Redeem Code"
+msgstr "Redeem Code"
+
+#: templates/index.html:107
+msgid "join our mailing list"
+msgstr "join our mailing list"
+
+#: templates/index.html:202
+msgid "Redeem your Agoric scrip below"
+msgstr "Redeem your Agoric scrip below"
+
+#: templates/index.html:206
+msgid "Desired Steem account name"
+msgstr "Desired Steem account name"
+
+#: templates/index.html:207
+msgid "Invite code"
+msgstr "Invite code"
+
+#: templates/index.html:208
+msgid "Referrer Steem account"
+msgstr "Referrer Steem account"
+
+#: templates/index.html:210
+msgid "Register"
+msgstr "Register"
+

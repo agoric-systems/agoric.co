@@ -1,0 +1,111 @@
+# French translations for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-01-25 22:49-0500\n"
+"PO-Revision-Date: 2018-01-25 21:32-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: views.py:35
+msgid "unknown"
+msgstr "inconnu"
+
+#: views.py:43
+msgid "Please provide a desired account name."
+msgstr "Veuillez indiquer le nom du compte souhaité."
+
+#: views.py:47
+msgid "Test code used successfully."
+msgstr "Code de test utilisé avec succès."
+
+#: views.py:61
+msgid "Account created successfully!"
+msgstr "Compte créé avec succès!"
+
+#: views.py:63
+msgid ""
+"The invite code could not be validated. Please check your code and try "
+"again."
+msgstr ""
+"Le code d'invitation n'a pas pu être validé. Veuillez vérifier votre code"
+" et réessayer."
+
+#: views.py:65
+msgid "The desired account name is already taken. Please choose another."
+msgstr "Le nom de compte souhaité est déjà pris. Merci d'en choisir un autre."
+
+#: views.py:68
+msgid ""
+"The desired account name is invalid. The name must have 3-16 alphanumeric"
+" characters and can not start with a number or include symbols other than"
+" periods, underscores, and hyphens."
+msgstr ""
+"Le nom de compte souhaité est invalide. Le nom doit comporter 3 à 16 "
+"caractères alphanumériques et ne peut pas commencer par un nombre ou "
+"inclure des symboles autres que des points, des traits de soulignement et"
+" des traits d'union."
+
+#: views.py:70
+msgid ""
+"The account registration faucet has temporarily run out of funds. Please "
+"check back again later."
+msgstr ""
+"Le robinet d'enregistrement de compte a temporairement épuisé ses fonds. "
+"S'il vous plaît, vérifiez à nouveau plus tard."
+
+#: views.py:72
+msgid "There was an issue contacting the Steem network. Please try again."
+msgstr "Un problème est survenu en contactant le réseau Steem. Veuillez réessayer."
+
+#: templates/index.html:70
+msgid "Join mailing list:"
+msgstr "Joignez-vous à la liste de diffusion:"
+
+#: templates/index.html:88 templates/index.html:262
+msgid "About"
+msgstr "À propos"
+
+#: templates/index.html:91 templates/index.html:265
+msgid "Witness Proposal"
+msgstr "Proposition de témoin"
+
+#: templates/index.html:94 templates/index.html:268
+msgid "Redeem Code"
+msgstr "Utiliser le code"
+
+#: templates/index.html:107
+msgid "join our mailing list"
+msgstr "Joignez-vous à notre liste d'envoi"
+
+#: templates/index.html:202
+msgid "Redeem your Agoric scrip below"
+msgstr "Échangez votre scrip Agoric ci-dessous"
+
+#: templates/index.html:206
+msgid "Desired Steem account name"
+msgstr "Nom du compte Steem souhaité"
+
+#: templates/index.html:207
+msgid "Invite code"
+msgstr "Code d'invitation"
+
+#: templates/index.html:208
+msgid "Referrer Steem account"
+msgstr "Compte référent Steem"
+
+#: templates/index.html:210
+msgid "Register"
+msgstr "Inscription"
+
