@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-25 22:49-0500\n"
+"POT-Creation-Date: 2018-01-28 22:43-0500\n"
 "PO-Revision-Date: 2018-01-25 21:29-0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -72,6 +72,14 @@ msgstr "There was an issue contacting the Steem network. Please try again."
 msgid "Join mailing list:"
 msgstr "Join mailing list:"
 
+#: templates/index.html:74
+msgid "Email address"
+msgstr "Email address"
+
+#: templates/index.html:75
+msgid "Subscribe"
+msgstr "Subscribe"
+
 #: templates/index.html:88 templates/index.html:262
 msgid "About"
 msgstr "About"
@@ -91,6 +99,24 @@ msgstr "join our mailing list"
 #: templates/index.html:202
 msgid "Redeem your Agoric scrip below"
 msgstr "Redeem your Agoric scrip below"
+
+#: templates/index.html:203
+msgid "Enter the code found on your Agoric scrip to automatically register a"
+msgstr "Enter the code found on your Agoric scrip to automatically register a"
+
+#: templates/index.html:203
+msgid "account below."
+msgstr "account below."
+
+#: templates/index.html:204
+msgid ""
+"Steem is a global network that rewards content creation. Participants "
+"earn STEEM, a digital currency, that can appreciate in value as the "
+"network grows."
+msgstr ""
+"Steem is a global network that rewards content creation. Participants "
+"earn STEEM, a digital currency, that can appreciate in value as the "
+"network grows."
 
 #: templates/index.html:206
 msgid "Desired Steem account name"

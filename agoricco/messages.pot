@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-25 22:49-0500\n"
+"POT-Creation-Date: 2018-01-28 22:43-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,14 @@ msgstr ""
 msgid "Join mailing list:"
 msgstr ""
 
+#: templates/index.html:74
+msgid "Email address"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Subscribe"
+msgstr ""
+
 #: templates/index.html:88 templates/index.html:262
 msgid "About"
 msgstr ""
@@ -82,6 +90,21 @@ msgstr ""
 
 #: templates/index.html:202
 msgid "Redeem your Agoric scrip below"
+msgstr ""
+
+#: templates/index.html:203
+msgid "Enter the code found on your Agoric scrip to automatically register a"
+msgstr ""
+
+#: templates/index.html:203
+msgid "account below."
+msgstr ""
+
+#: templates/index.html:204
+msgid ""
+"Steem is a global network that rewards content creation. Participants "
+"earn STEEM, a digital currency, that can appreciate in value as the "
+"network grows."
 msgstr ""
 
 #: templates/index.html:206

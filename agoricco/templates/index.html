@@ -71,8 +71,8 @@
               <div class="newsletter-signup">
                 <form action="https://systems.us16.list-manage.com/subscribe/post?u=6b8cca047001fabfe85b1db25&id=5fa7de59b2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                   <div class="anti-spam-input" aria-hidden="true"><input type="text" name="b_6b8cca047001fabfe85b1db25_5fa7de59b2" tabindex="-1" value=""></div>
-                  <input type="email" name="EMAIL" value="" placeholder="Email address">
-                  <input value="Subscribe" name="subscribe" type="submit">
+                  <input type="email" name="EMAIL" value="" placeholder="{{ _('Email address') }}">
+                  <input value="{{ _('Subscribe') }}" name="subscribe" type="submit">
                 </form>
               </div>
             </div>
@@ -200,8 +200,8 @@
         <div class="page-container">
           <div id="faucet-form" class="page">
             <h1>{{ _('Redeem your Agoric scrip below') }}</h1>
-            <strong>Enter the code found on your Agoric scrip to automatically register a <a href="https://steem.io/" target="_blank">Steem</a> account below.</strong>
-            <p>Steem is a global network that rewards content creation. Participants earn STEEM, a digital currency, that can appreciate in value as the network grows.</p>
+            <strong>{{ _('Enter the code found on your Agoric scrip to automatically register a') }} <a href="https://steem.io/" target="_blank">Steem</a> {{ _('account below.') }}</strong>
+            <p>{{ _('Steem is a global network that rewards content creation. Participants earn STEEM, a digital currency, that can appreciate in value as the network grows.') }}</p>
             <form id="redemption-form" action="/faucet" method="POST">
               <input type="text" class="text-input" name="account_name" placeholder="{{ _('Desired Steem account name') }}">
               <input type="text" class="text-input" name="code" placeholder="{{ _('Invite code') }}">

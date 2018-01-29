@@ -17,8 +17,6 @@ if 'FLASK_APP_SETTINGS' in os.environ:
 else:
     app.config.from_object('agoricco.default_settings')
 
-app.config['BABEL_DEFAULT_LOCALE'] = 'fr'
-#user.locale = 'fr'
 
 csp = {
     'default-src': [
