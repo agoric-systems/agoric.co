@@ -5,6 +5,7 @@ from .lib.faucet import register_account, query_account
 from flask import render_template, request, flash, redirect, jsonify
 from steembase.exceptions import RPCError, AccountExistsException
 from sqlalchemy.exc import IntegrityError
+from flask_babel import gettext, ngettext
 
 @app.route('/', methods= ['GET'], subdomain='portal')
 def portal_index():
@@ -31,7 +32,7 @@ def faucet():
     success = None
     error = None
     info = None
-    status = "unknown"
+    status = gettext(u'unknown')
     message = "unknown"
     try:
         password = None
@@ -39,11 +40,11 @@ def faucet():
         active_key = None
         private_posting_key = None
         if not request.form['account_name']:
-            error = 'Please provide a desired account name.'
+            error = gettext(u'Please provide a desired account name.')
         elif request.form['code'] == "TESTCODE":
             password = "TEST PASS WORD"
             private_posting_key = "5TESTPRIVATEPOSTINGKEY"
-            success = "Test code used successfully."
+            success = gettext(u'Test code used successfully.')
         elif request.form['code'] and validate_code(request.form['code']):
             if 'account_name' in request.form:
                 (res, password) = register_account(
@@ -57,18 +58,18 @@ def faucet():
                     # TODO: transfer prize amount to account (if any)
                     referrer = request.form['referrer_account'] if 'referrer_account' in request.form else None
                     burn_code(request.form['code'], request.form['account_name'], referrer=referrer)
-                    success = 'Account created successfully!'
+                    success = gettext(u'Account created successfully!')
         else:
-            error = 'The invite code could not be validated. Please check your code and try again.'
+            error = gettext(u'The invite code could not be validated. Please check your code and try again.')
     except (AccountExistsException, IntegrityError) as e:
-        error = 'The desired account name is already taken. Please choose another.'
+        error = gettext(u'The desired account name is already taken. Please choose another.')
     except RPCError as e:
         if ("Account name %s is invalid" % request.form['account_name']) in str(e):
-            error = "The desired account name is invalid. The name must have 3-16 alphanumeric characters and can not start with a number or include symbols other than periods, underscores, and hyphens."
+            error = gettext(u'The desired account name is invalid. The name must have 3-16 alphanumeric characters and can not start with a number or include symbols other than periods, underscores, and hyphens.')
         if 'Insufficient balance to create account' in str(e):
-            info = "The account registration faucet has temporarily run out of funds. Please check back again later."
+            info = gettext(u'The account registration faucet has temporarily run out of funds. Please check back again later.')
     except ReadTimeoutError as e:
-        info = "There was an issue contacting the Steem network. Please try again."
+        info = gettext(u'There was an issue contacting the Steem network. Please try again.')
     if error is not None:
         status = 'error'
         message = error

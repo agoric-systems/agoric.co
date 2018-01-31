@@ -5,9 +5,11 @@ from flask_talisman import Talisman
 from flask_cors import CORS
 from flask_seasurf import SeaSurf
 from flask_mobility import Mobility
+from flask_babel import Babel
 
 
 app = Flask(__name__)
+babel = Babel(app)
 
 
 if 'FLASK_APP_SETTINGS' in os.environ:

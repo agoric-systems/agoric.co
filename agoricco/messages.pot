@@ -1,0 +1,125 @@
+# Translations template for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-01-28 22:43-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: views.py:35
+msgid "unknown"
+msgstr ""
+
+#: views.py:43
+msgid "Please provide a desired account name."
+msgstr ""
+
+#: views.py:47
+msgid "Test code used successfully."
+msgstr ""
+
+#: views.py:61
+msgid "Account created successfully!"
+msgstr ""
+
+#: views.py:63
+msgid ""
+"The invite code could not be validated. Please check your code and try "
+"again."
+msgstr ""
+
+#: views.py:65
+msgid "The desired account name is already taken. Please choose another."
+msgstr ""
+
+#: views.py:68
+msgid ""
+"The desired account name is invalid. The name must have 3-16 alphanumeric"
+" characters and can not start with a number or include symbols other than"
+" periods, underscores, and hyphens."
+msgstr ""
+
+#: views.py:70
+msgid ""
+"The account registration faucet has temporarily run out of funds. Please "
+"check back again later."
+msgstr ""
+
+#: views.py:72
+msgid "There was an issue contacting the Steem network. Please try again."
+msgstr ""
+
+#: templates/index.html:70
+msgid "Join mailing list:"
+msgstr ""
+
+#: templates/index.html:74
+msgid "Email address"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Subscribe"
+msgstr ""
+
+#: templates/index.html:88 templates/index.html:262
+msgid "About"
+msgstr ""
+
+#: templates/index.html:91 templates/index.html:265
+msgid "Witness Proposal"
+msgstr ""
+
+#: templates/index.html:94 templates/index.html:268
+msgid "Redeem Code"
+msgstr ""
+
+#: templates/index.html:107
+msgid "join our mailing list"
+msgstr ""
+
+#: templates/index.html:202
+msgid "Redeem your Agoric scrip below"
+msgstr ""
+
+#: templates/index.html:203
+msgid "Enter the code found on your Agoric scrip to automatically register a"
+msgstr ""
+
+#: templates/index.html:203
+msgid "account below."
+msgstr ""
+
+#: templates/index.html:204
+msgid ""
+"Steem is a global network that rewards content creation. Participants "
+"earn STEEM, a digital currency, that can appreciate in value as the "
+"network grows."
+msgstr ""
+
+#: templates/index.html:206
+msgid "Desired Steem account name"
+msgstr ""
+
+#: templates/index.html:207
+msgid "Invite code"
+msgstr ""
+
+#: templates/index.html:208
+msgid "Referrer Steem account"
+msgstr ""
+
+#: templates/index.html:210
+msgid "Register"
+msgstr ""
+
